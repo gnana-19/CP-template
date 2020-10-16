@@ -49,6 +49,17 @@ using ld = long double;
 #define fastio ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 #define stprs(x) cout << fixed << setprecision(x);
 
+ll power(ll a, ll b, ll m = mod)
+{if(b==0)return 1;
+ else if(b==1)return a%m;
+ else{ll t=power(a,b>>1,m);
+      t=(t * t)%m;
+      if(b&1)
+          return (t * a)%m;
+      else 
+          return t;
+     }
+
 const char nl = '\n';
 const char sp = ' ';
 const int mod1 = 1e9 + 7;

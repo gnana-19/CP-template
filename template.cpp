@@ -18,7 +18,7 @@ using namespace std;
 
 using ld = long double;
 #define int long long
-
+# define mod 1000000007 
 #define F first
 #define S second
 #define s(x) set<x>
@@ -49,7 +49,7 @@ using ld = long double;
 #define fastio ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 #define stprs(x) cout << fixed << setprecision(x);
 
-ll power(ll a, ll b, ll m = mod)
+int power(int a, int b, int m = mod)
 {if(b==0)return 1;
  else if(b==1)return a%m;
  else{ll t=power(a,b>>1,m);

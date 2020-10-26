@@ -108,7 +108,7 @@ void solve()
 {
 }
 
-int32_t main()
+int main()
 {
     int T = 1;
     // fastio
